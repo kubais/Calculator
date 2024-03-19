@@ -9,38 +9,47 @@
 </head>
 <body>
     <h3>Calculator</h3>
-    <div class="container">
-        <div id="display">display</div>
-        <div>
-            <button id="clear">C</button>
-            <button id="back">Back</button>
-        </div>
-        <div class="operators">
-            <button id="plus">+</button>
-            <button id="minus">-</button>
-            <button id="times">*</button>
-            <button id="devided">/</button>
-        </div>
-        <div class="digits"></div>
-            <div>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>            
+    <div class="calculator">
+        <div id="display"></div>
+        <div class="buttonsAll">
+            <div class="row">
+                <button id="clear">C</button>
+                <button id="back">B</button>
+                <button id="times" class="operator">*</button>
+                <button id="devided" class="operator">/</button>
             </div>
-            <div>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>            
+            <div class="row">
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button> 
+                <button id="minus" class="operator">-</button>
+                
             </div>
-            <div>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
+            <div class="row">
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button> 
+                <button id="plus" class="operator">+</button>                
+            </div>
+            <div class="rowEquals">
+                <div class="left">
+                    <div class="leftOne">
+                        <button class="number">1</button>
+                        <button class="number">2</button>
+                        <button class="number">3</button>
+                    </div>
+                    <div class="leftTwo">
+                        <button class="number" id="zero">0</button>
+                        <button id="decimal" class="number">.</button> 
+                    </div>
+                </div>
+                <div class="right">
+                    <button id="equals">=</button>
+                </div>
             </div>
         </div>
-        <div>
-            <button id="equals">=</button>
-        </div>
+            
+        
     </div>
 </body>
 </html>

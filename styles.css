@@ -1,0 +1,111 @@
+h3 {
+    text-align: center;
+}
+.calculator {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#display {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 240px;
+    height: 50px;
+    border: 3px solid black;    
+}
+
+.buttonsAll {
+    display: flex;
+    flex-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    flex: 1;
+    gap: 10px;      
+}
+
+button {
+    flex: 1;
+    text-align: center;   
+    font-size: 25px; 
+    padding: 5px 0 5px 0;
+    background-color: rgb(233, 75, 75);
+}
+
+.rowEquals {
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    flex: 1;
+    
+    
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 6 1 0;
+    gap: 10px; 
+    
+    
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 1.8 1 0;
+    margin-left: 10px;
+    
+}
+
+.leftOne {
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    flex: 1;
+    gap: 10px;
+}
+
+.leftTwo {
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    flex: 1;
+    gap: 10px;
+}
+
+
+
+#zero {
+    flex-grow: 4.5;
+} 
+
+#decimal {
+    flex-grow: 2;
+}
+
+#equals {
+    background-color: rgb(76, 151, 76);
+}
+
+.number {
+    background-color: rgb(207, 195, 195);
+}
+
+.operator {
+    background-color: rgb(146, 146, 211);
+}
