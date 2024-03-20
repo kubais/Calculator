@@ -2,7 +2,7 @@ function add (a, b) {
     return a + b;
 }
 
-function substract (a, b) {
+function subtract (a, b) {
     return a / b;
 }
 
@@ -18,6 +18,7 @@ function divide (a, b) {
 let a;
 let b;
 let operator;
+let displayContent = '';
 
 function operate (operator, a, b) {
     let plusButton = document.querySelector('#plus');
@@ -29,7 +30,7 @@ function operate (operator, a, b) {
         plusButton.addEventListener('click', add(a, b));
     }
     if (operator == 'minusButton') {
-        minusButton.addEventListener('click', substract(a, b));        
+        minusButton.addEventListener('click', subtract(a, b));        
     }
     if (operator == 'timesButton') {
         timesButton.addEventListener('click', multiply(a,b));        
@@ -40,3 +41,26 @@ function operate (operator, a, b) {
 }
 
 operate();
+
+function populateDisplay() {
+    let numberButton = document.querySelectorAll('.number');
+    
+    let zeroButton = document.querySelector('#zero');
+    let oneButton = document.querySelector('#one');
+    let twoButton = document.querySelector('#two');
+    let threeButton = document.querySelector('#three');
+    let fourButton = document.querySelector('#four');
+    let fiveButton = document.querySelector('#five');
+    let sixButton = document.querySelector('#six');
+    let sevenButton = document.querySelector('#seven');
+    let eightButton = document.querySelector('#eight');
+    let nineButton = document.querySelector('#nine');
+    let display = document.querySelector('#display');
+
+    zeroButton.addEventListener('click', () => {
+        display.textContent += '0';
+        displayContent += '0';
+    })
+}
+
+populateDisplay();
