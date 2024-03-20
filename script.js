@@ -19,6 +19,18 @@ let a;
 let b;
 let operator;
 let displayContent = '';
+let numberButton = document.querySelectorAll('.number');
+// let zeroButton = document.querySelector('#zero');
+// let oneButton = document.querySelector('#one');
+// let twoButton = document.querySelector('#two');
+// let threeButton = document.querySelector('#three');
+// let fourButton = document.querySelector('#four');
+// let fiveButton = document.querySelector('#five');
+// let sixButton = document.querySelector('#six');
+// let sevenButton = document.querySelector('#seven');
+// let eightButton = document.querySelector('#eight');
+// let nineButton = document.querySelector('#nine');
+let display = document.querySelector('#display');
 
 function operate (operator, a, b) {
     let plusButton = document.querySelector('#plus');
@@ -43,24 +55,16 @@ function operate (operator, a, b) {
 operate();
 
 function populateDisplay() {
-    let numberButton = document.querySelectorAll('.number');
-    
-    let zeroButton = document.querySelector('#zero');
-    let oneButton = document.querySelector('#one');
-    let twoButton = document.querySelector('#two');
-    let threeButton = document.querySelector('#three');
-    let fourButton = document.querySelector('#four');
-    let fiveButton = document.querySelector('#five');
-    let sixButton = document.querySelector('#six');
-    let sevenButton = document.querySelector('#seven');
-    let eightButton = document.querySelector('#eight');
-    let nineButton = document.querySelector('#nine');
-    let display = document.querySelector('#display');
-
-    zeroButton.addEventListener('click', () => {
-        display.textContent += '0';
-        displayContent += '0';
+    Array.from(numberButton).forEach(button => {
+        button.addEventListener('click', () => {
+            display.textContent += button.textContent;
+            displayContent += button.textContent;
+        })
     })
+    // zeroButton.addEventListener('click', () => {
+    //     display.textContent += '0';
+    //     displayContent += '0';
+    // })
 }
 
 populateDisplay();
