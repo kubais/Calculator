@@ -10,41 +10,47 @@
 <body>
     <h3>Calculator</h3>
     <div class="calculator">
-        <div id="display"></div>
+        <div id="display">
+            <div id="top-row"></div>
+            <div id="bottom-row">
+              <span id="operator"></span>
+              <span id="current-number"></span>
+            </div>
+        </div>
         <div class="buttonsAll">
             <div class="row">
-                <button id="clear">C</button>
-                <button id="back">B</button>
-                <button id="times" class="operator">x</button>
-                <button id="devided" class="operator">/</button>
+                <button id="clear" value="clear">C</button>
+                <button id="back" value="back">B</button>
+                <button value="*" class="operator">x</button>
+                <button value="/" class="operator">/</button>
             </div>
             <div class="row">
-                <button id="seven" class="number">7</button>
-                <button id="eight" class="number">8</button>
-                <button id="nine" class="number">9</button> 
-                <button id="minus" class="operator">-</button>
+                <button value="7" class="number">7</button>
+                <button value="8" class="number">8</button>
+                <button value="9" class="number">9</button> 
+                <button value="-" class="operator">-</button>
                 
             </div>
             <div class="row">
-                <button id="four" class="number">4</button>
-                <button id="five" class="number">5</button>
-                <button id="six" class="number">6</button> 
-                <button id="plus" class="operator">+</button>                
+                <button value="4" class="number">4</button>
+                <button value="5" class="number">5</button>
+                <button value="6" class="number">6</button> 
+                <button value="+" class="operator">+</button>                
             </div>
             <div class="rowEquals">
                 <div class="left">
                     <div class="leftOne">
-                        <button id="one" class="number">1</button>
-                        <button id="two" class="number">2</button>
-                        <button id="three" class="number">3</button>
+                        <button value="1" class="number">1</button>
+                        <button value="2" class="number">2</button>
+                        <button value="3" class="number">3</button>
                     </div>
                     <div class="leftTwo">
-                        <button id="zero" class="number">0</button>
-                        <button id="decimal" class="number">.</button> 
+                        <button id = 'zero' value="0" class="number">0</button>
+                        <button id="decimal" value="." class="number">.</button> 
                     </div>
                 </div>
                 <div class="right">
-                    <button id="equals">=</button>
+                    <button value="=" class="operator">=</button>
                 </div>
             </div>
         </div>

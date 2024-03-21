@@ -21,21 +21,46 @@ h3 {
 }
 
 #display {
-    display: flex;
-    margin: auto;
+    display: block;
+    align-self: center;
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     width: 240px;
-    height: 50px;
+    height: 80px;
     border: 3px solid black;  
     box-shadow: inset 3px 3px 6px rgb(141, 138, 138);  
     background-color: aliceblue;
     font-family:'digital-clock-font';
-    font-size: 50px;
-    justify-content: right;
-    align-items: center;
-    padding: 10px;
+    padding: 5px;
+    text-align: right;
+}
+
+#top-row {
+    display: block;
     
+    
+    font-size: 35px;
+    padding: 5px;
+    text-align: right;
+}
+
+#bottom-row {
+    display: flex;
+    font-size: 45px;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+#operator {
+    width: 40px;
+    height: 48px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#current-number {
+    flex: 1;
+    height: 48px;
 }
 
 .buttonsAll {
